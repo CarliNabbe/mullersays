@@ -55,7 +55,14 @@ p {
 #intersection {
     background: pink;
     width: 100vw;
-    height: 200px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#simonSays {
+     
 }
 
 #interactiveGame {
@@ -63,10 +70,6 @@ p {
     height: 500px;
     justify-content: center;
     display: flex;
-}
-
-#simonSays {
-    align-self: center;
 }
 
 #container {
