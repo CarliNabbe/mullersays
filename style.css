@@ -55,14 +55,18 @@ p {
 #intersection {
     background: pink;
     width: 100vw;
-    height: 500px;
-    display: flex;
+    height: 600px;
     align-items: center;
     justify-content: flex-start;
 }
 
-#simonSays {
-     
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#factsList {
+    list-style-type: none;
 }
 
 #interactiveGame {
@@ -134,4 +138,30 @@ p {
     background: grey;
     width: 100vw;
     height: 200px;
+}
+
+@media (max-width: 650px) {
+    
+    h1 {
+        transform: scale(.5);
+        text-align: center;
+    }
+}
+    
+@media (max-width: 900px) {
+    #container {
+        width: 100%;
+        border: 2px solid blue;
+        display: flex;
+    }
+}
+    
+
+
+@media (max-width: 400px) {
+    
+    #navbar a {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
