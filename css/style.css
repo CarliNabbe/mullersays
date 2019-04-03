@@ -1,0 +1,155 @@
+* {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#header {
+    background-image: url(../img/header.jpg);
+    width: 100vw;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+/* Navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-family: 'Fjalla One', cursive;
+    font-size: 20px;
+}
+
+#content p {
+    margin: 20px;
+    width: 50vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 10px;
+    font-family: 'Fjalla One', cursive;
+}
+
+h2 {
+    font-family: 'Fjalla One', cursive;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#intersection {
+    background: #f1f2f6;
+    width: 100vw;
+    height: 600px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#simonSays {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#factsList {
+    list-style-type: none;
+    text-align: center;
+}
+
+#interactiveGame {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+#interactiveGame h1 {
+}
+
+#container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px;
+}
+
+.item {
+/*    border: 2px solid #d6d6d6;*/
+    background-color: #f3f3f3;
+    height: auto;
+    margin: 20px;
+    -webkit-box-shadow: 10px 10px 44px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 44px -14px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 44px -14px rgba(0,0,0,0.75);
+}
+
+.item h2, .item p {
+    text-align: center;
+    margin: 10px;
+}
+
+#item-1 img, #item-2 img, #item-3 img {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#footer {
+    background: #f1f2f6;
+    width: 100vw;
+    height: 200px;
+}
+
+@media (max-width: 650px) {
+    
+    h1 {
+        transform: scale(.5);
+        text-align: center;
+    }
+}
+    
+@media (max-width: 600px) {
+    #container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content p {
+        text-align: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #content h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    #navbar a {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
