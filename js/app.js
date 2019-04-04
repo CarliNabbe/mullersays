@@ -1,72 +1,53 @@
-let green = document.getElementById("green");
-let red = document.getElementById("red");
-let blue = document.getElementById("blue");
-let yellow = document.getElementById("yellow");
-let grey = document.getElementById("grey");
+let start = document.getElementById("start");
+let audio = document.getElementById("audio");
+let sounds = ["./sounds/bmo.wav", "./sounds/linux.wav", "./sounds/check.wav", "./sounds/play.wav"];
+let imagesArray = ["img/green.png", "img/red.png", "img/blue.png", "img/yellow.png"];
+let smoothScroll = document.getElementById("smoothScroll");
 
-let facts = document.getElementById("factList");
-
-green.addEventListener("click", function(){
-    console.log("Click!");
-    greenLi.innerHTML = "Simon Says werd als eerste getoond in een nachtclub in 1978";
-    if (greenLi.style.display === "block") {
-        greenLi.style.display = 'none';
-    }
-    else {
-        greenLi.style.display = "block";
-    }
-    
-    simonSays.src = "img/green.png";
-});
-
-red.addEventListener("click", function(){
-    console.log("Click!");
-    redLi.innerHTML = "Vandaag wordt het spel nog steeds actief gespeeld";
-    if (redLi.style.display === "block") {
-        redLi.style.display = 'none';
-    }
-    else {
-        redLi.style.display = "block";
-    }
-    
-    simonSays.src = "img/red.png";
-});
-
-blue.addEventListener("click", function(){
-    console.log("Click!");
-    blueLi.innerHTML = "De originele geluiden zijn gebaseerd op de muzikale noten van een bugle";
-    if (blueLi.style.display === "block") {
-        blueLi.style.display = 'none';
-    }
-    else {
-        blueLi.style.display = "block";
-    }
-    
-    simonSays.src = "img/blue.png";
-});
-
-yellow.addEventListener("click", function(){
-    console.log("Click!");
-    yellowLi.innerHTML = "Simon Says is geinspireerd op de Atari game 'Touch Me'";
-    if (yellowLi.style.display === "block") {
-        yellowLi.style.display = 'none';
-    }
-    else {
-        yellowLi.style.display = "block";
-    }
-    
-    simonSays.src = "img/yellow.png";
-});
 
 start.addEventListener("click", function(){
     console.log("Click!");
     startLi.innerHTML = "The game has started!";
     if (startLi.style.display === "block") {
         startLi.style.display = 'none';
+        simonSays.src = "img/simonsays.png";
+
     }
     else {
         startLi.style.display = "block";
+        simonSays.src = "img/start.png";
+        // audio.src = sounds[3];
+        // audio.play();
     }
-    
-    simonSays.src = "img/start.png";
+    for(let i = 0; i < 10; i++) {
+        randomImage();
+    }
+
+
 });
+
+function randomImage() {
+    let num = Math.floor(Math.random() * 4); // 0...3
+    simonSays.src = imagesArray[num];
+    audio.src = sounds[num];
+    audio.play();
+
+    // setTimeout(() => {
+    //     randomImage()
+    // }, 2000);
+
+
+}
+
+// Function smooth scroll
+function smoothy() {
+    smoothScroll.addEventListener("click", function () {
+
+        // console.log("yo");
+        window.scroll({
+            top: 880,
+            behavior: 'smooth'
+        });
+    });
+}
+smoothy();

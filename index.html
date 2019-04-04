@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Mullerhoofd Park</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Fjalla+One" rel="stylesheet">
 </head>
-
 <body>
-    
-    <div id="navbar">
-        <a href="index.php">Home</a>
-        <a href="score.php">Scores</a>
-    </div>
-    
-    <section id=header></section>
-    <section id="content">
-    
+
+<div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="score.php">Scores</a>
+    <a href="#" id="smoothScroll">Game</a>
+</div>
+
+<section id=header></section>
+<section id="content">
+
     <h1>Mullerhoofd Park</h1>
-        
+
     <p>Het Mullerhoofd park is een gezellig park gelegen aan de kade, dichtbij de Euromast. Het is een groot park waar je fijn doorheen kan lopen, even stoppen om te voetballen op het veldje ernaast, of lekker rustig kan genieten van een boek of gewoon van de zon. Er zijn verschillende zitgelegenheden waar je gebruik van kan maken. Ook is er een glijbaan te vinden voor de kleintjes. Langs het park heb je de kade, waar je fijn kan zitten aan het water. Vooral hier zit je lekker in de zomer om even af te koelen. Op drie verschillende locaties aan het park zijn stenen te vinden om makkelijk toegang te bieden tot het park zelf. Deze dienen als snelle route en zijn er om overheen te lopen.<br><br>
-        
-    In de omgeving van het park is een tramhalte te vinden voor makkelijk openbaar vervoer in de buurt. Naast deze halte is meteen het theater te vinden. Hier worden elke dag shows georganiseerd die je in de avond kan bezoeken. Wil je even wat stoom afblazen? Dan is er ook een sportschool te vinden waar je onbeperkt kan sporten.</p>
-    
-    </section>
-    <section id="intersection">
-        
-        <h2>Voor wat leuke feitjes over Simon Says, klik de game!</h2>
-        
-        <img src="img/simonsays.png" id="simonSays" usemap="#image-map"/>
-        
-        <map name="image-map">
-            <area target="" id="green" alt="" title="green" coords="184,114,183,25,132,36,80,69,50,103,33,136,21,186,111,187,137,136,156,122" shape="poly">
-            <area target="" id="red" alt="" title="red" coords="213,25,212,114,246,126,274,155,285,186,376,186,366,141,346,103,320,71,287,47,252,31" shape="poly">
-            <area target="" id="blue" alt="" title="blue" coords="285,216,375,216,362,268,340,307,311,337,277,360,248,373,213,378,212,289,247,275,276,242" shape="poly">
-            <area target="" id="yellow" alt="" title="yellow" coords="184,289,185,379,128,367,89,343,56,310,35,269,22,218,110,216,135,264" shape="poly">
-            <area target="" id="start" alt="" title="start" coords="198,200,63" shape="circle">
-        </map>
 
-        <ul id="factsList">
-            <li id="redLi"></li>
-            <li id="blueLi"></li>
-            <li id="yellowLi"></li>
-            <li id="greenLi"></li>
-            <li id="startLi"></li>
-        </ul>
-        
-    </section>
-    <section id="interactiveGame">
-        <div id="container">
-            <div id="item-1" class="item">
-                <img src="img/icon_1.png" />
-                <h2>STAP 1</h2>
-                <p>Druk op de interactieve knop om het spel te starten. De instructies zijn te vinden op het bord.</p>
-            </div>
-            <div id="item-2" class="item">
-                <img src="img/icon_2.png" />
-                <h2>STAP 2</h2>
-                <p>Wacht tot het patroon klaar is met afspelen. Onthoud goed welke stenen in welke volgorde oplichten!</p>
-            </div>
-            <div id="item-3" class="item">
-                <img src="img/icon_3.png" />
-                <h2>STAP 3</h2>
-                <p>Doe het patroon zelf na door op de stenen te stappen.</p>
-            </div>
+        In de omgeving van het park is een tramhalte te vinden voor makkelijk openbaar vervoer in de buurt. Naast deze halte is meteen het theater te vinden. Hier worden elke dag shows georganiseerd die je in de avond kan bezoeken. Wil je even wat stoom afblazen? Dan is er ook een sportschool te vinden waar je onbeperkt kan sporten.</p>
+
+</section>
+<section id="intersection">
+
+    <!--<h2>Voor wat leuke feitjes over Simon Says, klik de game!</h2>-->
+
+    <img src="img/simonsays.png" id="simonSays" usemap="#image-map"/>
+
+    <map name="image-map">
+        <area target="" id="green" alt="" title="green" coords="184,114,183,25,132,36,80,69,50,103,33,136,21,186,111,187,137,136,156,122" shape="poly">
+        <area target="" id="red" alt="" title="red" coords="213,25,212,114,246,126,274,155,285,186,376,186,366,141,346,103,320,71,287,47,252,31" shape="poly">
+        <area target="" id="blue" alt="" title="blue" coords="285,216,375,216,362,268,340,307,311,337,277,360,248,373,213,378,212,289,247,275,276,242" shape="poly">
+        <area target="" id="yellow" alt="" title="yellow" coords="184,289,185,379,128,367,89,343,56,310,35,269,22,218,110,216,135,264" shape="poly">
+        <area target="" id="start" alt="" title="start" coords="198,200,63" shape="circle">
+    </map>
+
+    <ul id="factsList">
+        <li id="redLi"></li>
+        <li id="blueLi"></li>
+        <li id="yellowLi"></li>
+        <li id="greenLi"></li>
+        <li id="startLi"></li>
+    </ul>
+
+</section>
+<section id="interactiveGame">
+    <div id="container">
+        <div id="item-1" class="item">
+            <img src="img/icon_1.png" />
+            <h2>STAP 1</h2>
+            <p>Druk op de interactieve knop om het spel te starten. De instructies zijn te vinden op het bord.</p>
         </div>
-    </section>
-    <footer id="footer"></footer>
-    
-    
-    
-    
-    <script src="js/app.js"></script>
-</body>
+        <div id="item-2" class="item">
+            <img src="img/icon_2.png" />
+            <h2>STAP 2</h2>
+            <p>Wacht tot het patroon klaar is met afspelen. Onthoud goed welke stenen in welke volgorde oplichten!</p>
+        </div>
+        <div id="item-3" class="item">
+            <img src="img/icon_3.png" />
+            <h2>STAP 3</h2>
+            <p>Doe het patroon zelf na door op de stenen te stappen.</p>
+        </div>
+    </div>
+</section>
+<footer id="footer"></footer>
 
+
+
+<audio id="audio" src="sounds/bmo.wav"></audio>
+<script src="js/app.js"></script>
+</body>
 </html>
