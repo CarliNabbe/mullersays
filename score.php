@@ -16,7 +16,10 @@
 </head>
 <body>
 
-<h1>Hello</h1>
+<h1>Scorebord</h1>
+<div id="scoreboard"></div>
+<script src="js/score.js"></script>
 
 </body>
 </html>
+
